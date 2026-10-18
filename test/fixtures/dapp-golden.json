@@ -1,0 +1,1934 @@
+{
+  "plans": [
+    {
+      "name": "long around",
+      "input": {
+        "side": 1,
+        "entry": 3000,
+        "notional": 50000,
+        "leverage": 10,
+        "slices": 5,
+        "band": 0.5,
+        "placement": "around",
+        "sizeJitter": 0.3,
+        "seed": 42,
+        "tiers": [
+          {
+            "lowerBound": 0,
+            "maxLeverage": 40,
+            "l": 0.0125,
+            "deduction": 0
+          }
+        ],
+        "szDecimals": 4
+      },
+      "output": {
+        "input": {
+          "side": 1,
+          "entry": 3000,
+          "notional": 50000,
+          "leverage": 10,
+          "slices": 5,
+          "band": 0.5,
+          "placement": "around",
+          "sizeJitter": 0.3,
+          "seed": 42,
+          "tiers": [
+            {
+              "lowerBound": 0,
+              "maxLeverage": 40,
+              "l": 0.0125,
+              "deduction": 0
+            }
+          ],
+          "szDecimals": 4
+        },
+        "slices": [
+          {
+            "index": 1,
+            "notional": 8571.3,
+            "size": 2.8571,
+            "margin": 558.1900934508659,
+            "leverage": 15.355521533909986,
+            "liq": 2840.132189114175,
+            "distance": 0.05328927029527494
+          },
+          {
+            "index": 2,
+            "notional": 10544.1,
+            "size": 3.5147,
+            "margin": 801.1092278978866,
+            "leverage": 13.161875600494273,
+            "liq": 2807.158440042487,
+            "distance": 0.0642805199858376
+          },
+          {
+            "index": 3,
+            "notional": 11337.300000000001,
+            "size": 3.7791,
+            "margin": 1033.6490339939921,
+            "leverage": 10.968229667078562,
+            "liq": 2760.9951913421237,
+            "distance": 0.07966826955262543
+          },
+          {
+            "index": 4,
+            "notional": 9561,
+            "size": 3.187,
+            "margin": 1089.6243389096787,
+            "leverage": 8.774583733662848,
+            "liq": 2691.750318291579,
+            "distance": 0.10274989390280705
+          },
+          {
+            "index": 5,
+            "notional": 9985.8,
+            "size": 3.3286,
+            "margin": 1517.382522537289,
+            "leverage": 6.5809378002471375,
+            "liq": 2576.3421965406706,
+            "distance": 0.14121926781977648
+          }
+        ],
+        "totalMargin": 4999.955216789713,
+        "blendedLeverage": 9.999989566327123,
+        "band": {
+          "near": 2840.132189114175,
+          "far": 2576.3421965406706
+        },
+        "single": {
+          "liq": 2734.177215189873,
+          "distance": 0.08860759493670897,
+          "margin": 4999.98,
+          "leverage": 10
+        },
+        "maxLeverage": 40,
+        "capped": false
+      }
+    },
+    {
+      "name": "short beyond",
+      "input": {
+        "side": -1,
+        "entry": 3000,
+        "notional": 50000,
+        "leverage": 10,
+        "slices": 5,
+        "band": 0.5,
+        "placement": "beyond",
+        "sizeJitter": 0.3,
+        "seed": 42,
+        "tiers": [
+          {
+            "lowerBound": 0,
+            "maxLeverage": 40,
+            "l": 0.0125,
+            "deduction": 0
+          }
+        ],
+        "szDecimals": 4
+      },
+      "output": {
+        "input": {
+          "side": -1,
+          "entry": 3000,
+          "notional": 50000,
+          "leverage": 10,
+          "slices": 5,
+          "band": 0.5,
+          "placement": "beyond",
+          "sizeJitter": 0.3,
+          "seed": 42,
+          "tiers": [
+            {
+              "lowerBound": 0,
+              "maxLeverage": 40,
+              "l": 0.0125,
+              "deduction": 0
+            }
+          ],
+          "szDecimals": 4
+        },
+        "slices": [
+          {
+            "index": 1,
+            "notional": 8571.3,
+            "size": 2.8571,
+            "margin": 857.13,
+            "leverage": 10,
+            "liq": 3259.2592592592596,
+            "distance": 0.08641975308641986
+          },
+          {
+            "index": 2,
+            "notional": 10544.1,
+            "size": 3.5147,
+            "margin": 1171.5666666666668,
+            "leverage": 8.999999999999998,
+            "liq": 3292.181069958848,
+            "distance": 0.09739368998628273
+          },
+          {
+            "index": 3,
+            "notional": 11337.300000000001,
+            "size": 3.7791,
+            "margin": 1417.1625000000001,
+            "leverage": 8,
+            "liq": 3333.3333333333335,
+            "distance": 0.11111111111111116
+          },
+          {
+            "index": 4,
+            "notional": 9561,
+            "size": 3.187,
+            "margin": 1365.8571428571431,
+            "leverage": 6.999999999999999,
+            "liq": 3386.2433862433863,
+            "distance": 0.1287477954144621
+          },
+          {
+            "index": 5,
+            "notional": 9985.8,
+            "size": 3.3286,
+            "margin": 1664.3,
+            "leverage": 6,
+            "liq": 3456.7901234567903,
+            "distance": 0.15226337448559676
+          }
+        ],
+        "totalMargin": 6476.01630952381,
+        "blendedLeverage": 7.720718665650878,
+        "band": {
+          "near": 3259.2592592592596,
+          "far": 3456.7901234567903
+        },
+        "single": {
+          "liq": 3259.2592592592596,
+          "distance": 0.08641975308641986,
+          "margin": 4999.98,
+          "leverage": 10
+        },
+        "maxLeverage": 40,
+        "capped": false
+      }
+    },
+    {
+      "name": "near max leverage (capped)",
+      "input": {
+        "side": 1,
+        "entry": 3000,
+        "notional": 50000,
+        "leverage": 38,
+        "slices": 5,
+        "band": 0.5,
+        "placement": "around",
+        "sizeJitter": 0.3,
+        "seed": 42,
+        "tiers": [
+          {
+            "lowerBound": 0,
+            "maxLeverage": 40,
+            "l": 0.0125,
+            "deduction": 0
+          }
+        ],
+        "szDecimals": 4
+      },
+      "output": {
+        "input": {
+          "side": 1,
+          "entry": 3000,
+          "notional": 50000,
+          "leverage": 38,
+          "slices": 5,
+          "band": 0.5,
+          "placement": "around",
+          "sizeJitter": 0.3,
+          "seed": 42,
+          "tiers": [
+            {
+              "lowerBound": 0,
+              "maxLeverage": 40,
+              "l": 0.0125,
+              "deduction": 0
+            }
+          ],
+          "szDecimals": 4
+        },
+        "slices": [
+          {
+            "index": 1,
+            "notional": 8571.3,
+            "size": 2.8571,
+            "margin": 225.56052631578947,
+            "leverage": 38,
+            "liq": 2958.0279813457696,
+            "distance": 0.013990672884743465
+          },
+          {
+            "index": 2,
+            "notional": 10544.1,
+            "size": 3.5147,
+            "margin": 308.3070175438597,
+            "leverage": 34.199999999999996,
+            "liq": 2949.145014434821,
+            "distance": 0.016951661855059683
+          },
+          {
+            "index": 3,
+            "notional": 11337.300000000001,
+            "size": 3.7791,
+            "margin": 372.9375,
+            "leverage": 30.400000000000002,
+            "liq": 2938.041305796136,
+            "distance": 0.02065289806795469
+          },
+          {
+            "index": 4,
+            "notional": 9561,
+            "size": 3.187,
+            "margin": 359.436090225564,
+            "leverage": 26.599999999999994,
+            "liq": 2923.765108974969,
+            "distance": 0.02541163034167706
+          },
+          {
+            "index": 5,
+            "notional": 9985.8,
+            "size": 3.3286,
+            "margin": 437.97368421052624,
+            "leverage": 22.8,
+            "liq": 2904.73017988008,
+            "distance": 0.03175660670664002
+          }
+        ],
+        "totalMargin": 1704.2148182957394,
+        "blendedLeverage": 29.338730929473343,
+        "band": {
+          "near": 2958.0279813457696,
+          "far": 2904.73017988008
+        },
+        "single": {
+          "liq": 2958.0279813457696,
+          "distance": 0.013990672884743465,
+          "margin": 1315.7842105263157,
+          "leverage": 38
+        },
+        "maxLeverage": 40,
+        "capped": true
+      }
+    },
+    {
+      "name": "one slice",
+      "input": {
+        "side": 1,
+        "entry": 3000,
+        "notional": 50000,
+        "leverage": 10,
+        "slices": 1,
+        "band": 0.5,
+        "placement": "around",
+        "sizeJitter": 0.3,
+        "seed": 42,
+        "tiers": [
+          {
+            "lowerBound": 0,
+            "maxLeverage": 40,
+            "l": 0.0125,
+            "deduction": 0
+          }
+        ],
+        "szDecimals": 4
+      },
+      "output": {
+        "input": {
+          "side": 1,
+          "entry": 3000,
+          "notional": 50000,
+          "leverage": 10,
+          "slices": 1,
+          "band": 0.5,
+          "placement": "around",
+          "sizeJitter": 0.3,
+          "seed": 42,
+          "tiers": [
+            {
+              "lowerBound": 0,
+              "maxLeverage": 40,
+              "l": 0.0125,
+              "deduction": 0
+            }
+          ],
+          "szDecimals": 4
+        },
+        "slices": [
+          {
+            "index": 1,
+            "notional": 49999.799999999996,
+            "size": 16.6666,
+            "margin": 4999.98,
+            "leverage": 10,
+            "liq": 2734.177215189873,
+            "distance": 0.08860759493670897
+          }
+        ],
+        "totalMargin": 4999.98,
+        "blendedLeverage": 10,
+        "band": {
+          "near": 2734.177215189873,
+          "far": 2734.177215189873
+        },
+        "single": {
+          "liq": 2734.177215189873,
+          "distance": 0.08860759493670897,
+          "margin": 4999.98,
+          "leverage": 10
+        },
+        "maxLeverage": 40,
+        "capped": false
+      }
+    },
+    {
+      "name": "tiered market",
+      "input": {
+        "side": 1,
+        "entry": 100,
+        "notional": 60000,
+        "leverage": 15,
+        "slices": 4,
+        "band": 0.6,
+        "placement": "around",
+        "sizeJitter": 0.5,
+        "seed": 7,
+        "tiers": [
+          {
+            "lowerBound": 0,
+            "maxLeverage": 20,
+            "l": 0.025,
+            "deduction": 0
+          },
+          {
+            "lowerBound": 20000,
+            "maxLeverage": 10,
+            "l": 0.05,
+            "deduction": 500
+          }
+        ],
+        "szDecimals": 2
+      },
+      "output": {
+        "input": {
+          "side": 1,
+          "entry": 100,
+          "notional": 60000,
+          "leverage": 15,
+          "slices": 4,
+          "band": 0.6,
+          "placement": "around",
+          "sizeJitter": 0.5,
+          "seed": 7,
+          "tiers": [
+            {
+              "lowerBound": 0,
+              "maxLeverage": 20,
+              "l": 0.025,
+              "deduction": 0
+            },
+            {
+              "lowerBound": 20000,
+              "maxLeverage": 10,
+              "l": 0.05,
+              "deduction": 500
+            }
+          ],
+          "szDecimals": 2
+        },
+        "slices": [
+          {
+            "index": 1,
+            "notional": 11499,
+            "size": 114.99,
+            "margin": 766.6,
+            "leverage": 15,
+            "liq": 95.72649572649573,
+            "distance": 0.04273504273504272
+          },
+          {
+            "index": 2,
+            "notional": 20575,
+            "size": 205.75,
+            "margin": 2057.5,
+            "leverage": 10,
+            "liq": 92.17880667647248,
+            "distance": 0.07821193323527524
+          },
+          {
+            "index": 3,
+            "notional": 14350,
+            "size": 143.5,
+            "margin": 1406.862745098039,
+            "leverage": 10.200000000000001,
+            "liq": 92.50879839115134,
+            "distance": 0.07491201608848655
+          },
+          {
+            "index": 4,
+            "notional": 13574,
+            "size": 135.74,
+            "margin": 1740.2564102564102,
+            "leverage": 7.800000000000001,
+            "liq": 89.41485864562789,
+            "distance": 0.10585141354372113
+          }
+        ],
+        "totalMargin": 5971.219155354449,
+        "blendedLeverage": 10.0478643370842,
+        "band": {
+          "near": 95.72649572649573,
+          "far": 89.41485864562789
+        },
+        "single": {
+          "liq": 97.36842105263159,
+          "distance": 0.026315789473684105,
+          "margin": 4000,
+          "leverage": 15
+        },
+        "maxLeverage": 20,
+        "capped": true
+      }
+    },
+    {
+      "name": "below 1x, no size variation",
+      "input": {
+        "side": -1,
+        "entry": 3000,
+        "notional": 50000,
+        "leverage": 0.5,
+        "slices": 3,
+        "band": 0.5,
+        "placement": "beyond",
+        "sizeJitter": 0,
+        "seed": 99,
+        "tiers": [
+          {
+            "lowerBound": 0,
+            "maxLeverage": 40,
+            "l": 0.0125,
+            "deduction": 0
+          }
+        ],
+        "szDecimals": 4
+      },
+      "output": {
+        "input": {
+          "side": -1,
+          "entry": 3000,
+          "notional": 50000,
+          "leverage": 0.5,
+          "slices": 3,
+          "band": 0.5,
+          "placement": "beyond",
+          "sizeJitter": 0,
+          "seed": 99,
+          "tiers": [
+            {
+              "lowerBound": 0,
+              "maxLeverage": 40,
+              "l": 0.0125,
+              "deduction": 0
+            }
+          ],
+          "szDecimals": 4
+        },
+        "slices": [
+          {
+            "index": 1,
+            "notional": 16666.5,
+            "size": 5.5555,
+            "margin": 33333,
+            "leverage": 0.5,
+            "liq": 8888.888888888889,
+            "distance": 1.9629629629629628
+          },
+          {
+            "index": 2,
+            "notional": 16666.5,
+            "size": 5.5555,
+            "margin": 41666.25,
+            "leverage": 0.4,
+            "liq": 10370.37037037037,
+            "distance": 2.45679012345679
+          },
+          {
+            "index": 3,
+            "notional": 16666.5,
+            "size": 5.5555,
+            "margin": 55555,
+            "leverage": 0.3,
+            "liq": 12839.506172839507,
+            "distance": 3.279835390946502
+          }
+        ],
+        "totalMargin": 130554.25,
+        "blendedLeverage": 0.3829787234042553,
+        "band": {
+          "near": 8888.888888888889,
+          "far": 12839.506172839507
+        },
+        "single": {
+          "liq": 8888.888888888889,
+          "distance": 1.9629629629629628,
+          "margin": 99999.59999999999,
+          "leverage": 0.5
+        },
+        "maxLeverage": 40,
+        "capped": false
+      }
+    },
+    {
+      "name": "many slices, full variation",
+      "input": {
+        "side": 1,
+        "entry": 3000,
+        "notional": 50000,
+        "leverage": 10,
+        "slices": 12,
+        "band": 1,
+        "placement": "around",
+        "sizeJitter": 1,
+        "seed": 123456,
+        "tiers": [
+          {
+            "lowerBound": 0,
+            "maxLeverage": 40,
+            "l": 0.0125,
+            "deduction": 0
+          }
+        ],
+        "szDecimals": 4
+      },
+      "output": {
+        "input": {
+          "side": 1,
+          "entry": 3000,
+          "notional": 50000,
+          "leverage": 10,
+          "slices": 12,
+          "band": 1,
+          "placement": "around",
+          "sizeJitter": 1,
+          "seed": 123456,
+          "tiers": [
+            {
+              "lowerBound": 0,
+              "maxLeverage": 40,
+              "l": 0.0125,
+              "deduction": 0
+            }
+          ],
+          "szDecimals": 4
+        },
+        "slices": [
+          {
+            "index": 1,
+            "notional": 6782.400000000001,
+            "size": 2.2608,
+            "margin": 269.42669043588296,
+            "leverage": 25.173452522566794,
+            "liq": 2917.292997914535,
+            "distance": 0.027569000695154954
+          },
+          {
+            "index": 2,
+            "notional": 2413.7999999999997,
+            "size": 0.8046,
+            "margin": 104.31633068400578,
+            "leverage": 23.139234136904836,
+            "liq": 2906.683618958072,
+            "distance": 0.031105460347309266
+          },
+          {
+            "index": 3,
+            "notional": 1795.2,
+            "size": 0.5984,
+            "margin": 85.06034874170993,
+            "leverage": 21.105015751242874,
+            "liq": 2894.029058516026,
+            "distance": 0.03532364716132467
+          },
+          {
+            "index": 4,
+            "notional": 2317.2,
+            "size": 0.7724,
+            "margin": 121.50514504349447,
+            "leverage": 19.070797365580905,
+            "liq": 2878.6748585130094,
+            "distance": 0.040441713828996854
+          },
+          {
+            "index": 5,
+            "notional": 3368.4,
+            "size": 1.1228,
+            "margin": 197.7157505606226,
+            "leverage": 17.036578979918943,
+            "liq": 2859.653983882407,
+            "distance": 0.04678200537253103
+          },
+          {
+            "index": 6,
+            "notional": 6047.099999999999,
+            "size": 2.0157,
+            "margin": 403.0765666514427,
+            "leverage": 15.002360594256976,
+            "liq": 2835.47490596215,
+            "distance": 0.05484169801261669
+          },
+          {
+            "index": 7,
+            "notional": 6646.2,
+            "size": 2.2154,
+            "margin": 512.5020911318381,
+            "leverage": 12.968142208595017,
+            "liq": 2803.710234968871,
+            "distance": 0.06542992167704294
+          },
+          {
+            "index": 8,
+            "notional": 6554.099999999999,
+            "size": 2.1847,
+            "margin": 599.4279918297295,
+            "leverage": 10.933923822933053,
+            "liq": 2760.126151512977,
+            "distance": 0.0799579494956744
+          },
+          {
+            "index": 9,
+            "notional": 2872.5,
+            "size": 0.9575,
+            "margin": 322.76349147133044,
+            "leverage": 8.899705437271088,
+            "liq": 2696.6179156201015,
+            "distance": 0.10112736145996618
+          },
+          {
+            "index": 10,
+            "notional": 4068.3,
+            "size": 1.3561,
+            "margin": 592.5726710163232,
+            "leverage": 6.865487051609124,
+            "liq": 2595.4751695684868,
+            "distance": 0.13484161014383775
+          },
+          {
+            "index": 11,
+            "notional": 5040.599999999999,
+            "size": 1.6802,
+            "margin": 1043.3284399040551,
+            "leverage": 4.831268665947163,
+            "liq": 2409.159584736564,
+            "distance": 0.19694680508781207
+          },
+          {
+            "index": 12,
+            "notional": 2092.5,
+            "size": 0.6975,
+            "margin": 748.1095405216098,
+            "leverage": 2.7970502802851986,
+            "liq": 1951.8395128763887,
+            "distance": 0.3493868290412038
+          }
+        ],
+        "totalMargin": 4999.805057992045,
+        "blendedLeverage": 10.000049885960886,
+        "band": {
+          "near": 2917.292997914535,
+          "far": 1951.8395128763887
+        },
+        "single": {
+          "liq": 2734.177215189873,
+          "distance": 0.08860759493670897,
+          "margin": 4999.98,
+          "leverage": 10
+        },
+        "maxLeverage": 40,
+        "capped": false
+      }
+    },
+    {
+      "name": "seed 0",
+      "input": {
+        "side": 1,
+        "entry": 3000,
+        "notional": 50000,
+        "leverage": 10,
+        "slices": 5,
+        "band": 0.5,
+        "placement": "around",
+        "sizeJitter": 0.8,
+        "seed": 0,
+        "tiers": [
+          {
+            "lowerBound": 0,
+            "maxLeverage": 40,
+            "l": 0.0125,
+            "deduction": 0
+          }
+        ],
+        "szDecimals": 1
+      },
+      "output": {
+        "input": {
+          "side": 1,
+          "entry": 3000,
+          "notional": 50000,
+          "leverage": 10,
+          "slices": 5,
+          "band": 0.5,
+          "placement": "around",
+          "sizeJitter": 0.8,
+          "seed": 0,
+          "tiers": [
+            {
+              "lowerBound": 0,
+              "maxLeverage": 40,
+              "l": 0.0125,
+              "deduction": 0
+            }
+          ],
+          "szDecimals": 1
+        },
+        "slices": [
+          {
+            "index": 1,
+            "notional": 5700,
+            "size": 1.9,
+            "margin": 353.27590053462785,
+            "leverage": 16.134698096796132,
+            "liq": 2849.6863954512305,
+            "distance": 0.05010453484958983
+          },
+          {
+            "index": 2,
+            "notional": 7200,
+            "size": 2.4,
+            "margin": 520.6171165773463,
+            "leverage": 13.829741225825256,
+            "liq": 2818.3050141023855,
+            "distance": 0.06056499529920484
+          },
+          {
+            "index": 3,
+            "notional": 14100,
+            "size": 4.7,
+            "margin": 1223.450223956764,
+            "leverage": 11.52478435485438,
+            "liq": 2774.3710802140017,
+            "distance": 0.0752096399286661
+          },
+          {
+            "index": 4,
+            "notional": 10800,
+            "size": 3.6,
+            "margin": 1171.3885122990293,
+            "leverage": 9.219827483883503,
+            "liq": 2708.470179381426,
+            "distance": 0.09717660687285798
+          },
+          {
+            "index": 5,
+            "notional": 11700,
+            "size": 3.9,
+            "margin": 1692.0056288763753,
+            "leverage": 6.914870612912629,
+            "liq": 2598.635344660467,
+            "distance": 0.13378821844651095
+          }
+        ],
+        "totalMargin": 4960.737382244143,
+        "blendedLeverage": 9.978355269757728,
+        "band": {
+          "near": 2849.6863954512305,
+          "far": 2598.635344660467
+        },
+        "single": {
+          "liq": 2734.177215189873,
+          "distance": 0.08860759493670897,
+          "margin": 4980.000000000001,
+          "leverage": 10
+        },
+        "maxLeverage": 40,
+        "capped": false
+      }
+    }
+  ],
+  "loans": [
+    {
+      "name": "around",
+      "input": {
+        "collateral": {
+          "symbol": "WETH",
+          "ltv": 0.8,
+          "liqThreshold": 0.83,
+          "priceUsd": 2500
+        },
+        "collateralAmount": 10,
+        "debtUsd": 12000,
+        "loans": 4,
+        "band": 0.5,
+        "placement": "around",
+        "sizeJitter": 0.3,
+        "seed": 42
+      },
+      "output": {
+        "loans": [
+          {
+            "index": 1,
+            "collateral": 2.1421332907456048,
+            "collateralUsd": 5355.3332268640115,
+            "debtUsd": 3644.465796255697,
+            "ltv": 0.6805301634590967,
+            "hf": 1.2196373424230846,
+            "liq": 2049.7896489731825,
+            "distance": 0.18008414041072707
+          },
+          {
+            "index": 2,
+            "collateral": 2.635100308342557,
+            "collateralUsd": 6587.750770856392,
+            "debtUsd": 3629.2272786484637,
+            "ltv": 0.5509053704192688,
+            "hf": 1.506610834757928,
+            "liq": 1659.3535253592433,
+            "distance": 0.33625858985630264
+          },
+          {
+            "index": 3,
+            "collateral": 2.8333525581403993,
+            "collateralUsd": 7083.381395350998,
+            "debtUsd": 2984.0910040322574,
+            "ltv": 0.4212805773794408,
+            "hf": 1.970183399298829,
+            "liq": 1268.9174017453036,
+            "distance": 0.49243303930187854
+          },
+          {
+            "index": 4,
+            "collateral": 2.3894138427714386,
+            "collateralUsd": 5973.534606928597,
+            "debtUsd": 1742.2159210635812,
+            "ltv": 0.29165578433961287,
+            "hf": 2.8458204656538637,
+            "liq": 878.4812781313642,
+            "distance": 0.6486074887474543
+          }
+        ],
+        "single": {
+          "index": 0,
+          "collateral": 10,
+          "collateralUsd": 25000,
+          "debtUsd": 12000,
+          "ltv": 0.48,
+          "hf": 1.7291666666666667,
+          "liq": 1445.7831325301206,
+          "distance": 0.4216867469879517
+        },
+        "totalCollateral": 10,
+        "totalCollateralUsd": 25000,
+        "extraCollateral": 0,
+        "band": {
+          "near": 2049.7896489731825,
+          "far": 878.4812781313642
+        },
+        "capped": false,
+        "overMax": false
+      }
+    },
+    {
+      "name": "beyond",
+      "input": {
+        "collateral": {
+          "symbol": "WETH",
+          "ltv": 0.8,
+          "liqThreshold": 0.83,
+          "priceUsd": 2500
+        },
+        "collateralAmount": 10,
+        "debtUsd": 12000,
+        "loans": 4,
+        "band": 0.5,
+        "placement": "beyond",
+        "sizeJitter": 0.3,
+        "seed": 42
+      },
+      "output": {
+        "loans": [
+          {
+            "index": 1,
+            "collateral": 2.1421332907456048,
+            "collateralUsd": 5355.3332268640115,
+            "debtUsd": 2570.5599488947255,
+            "ltv": 0.48,
+            "hf": 1.7291666666666667,
+            "liq": 1445.7831325301204,
+            "distance": 0.42168674698795183
+          },
+          {
+            "index": 2,
+            "collateral": 3.0405003557798733,
+            "collateralUsd": 7601.250889449683,
+            "debtUsd": 3162.120370011068,
+            "ltv": 0.416,
+            "hf": 1.9951923076923077,
+            "liq": 1253.0120481927713,
+            "distance": 0.4987951807228914
+          },
+          {
+            "index": 3,
+            "collateral": 3.8636625792823627,
+            "collateralUsd": 9659.156448205908,
+            "debtUsd": 3400.0230697684797,
+            "ltv": 0.35200000000000004,
+            "hf": 2.357954545454545,
+            "liq": 1060.2409638554218,
+            "distance": 0.5759036144578313
+          },
+          {
+            "index": 4,
+            "collateral": 3.9823564046190647,
+            "collateralUsd": 9955.891011547661,
+            "debtUsd": 2867.2966113257266,
+            "ltv": 0.28800000000000003,
+            "hf": 2.8819444444444438,
+            "liq": 867.4698795180723,
+            "distance": 0.653012048192771
+          }
+        ],
+        "single": {
+          "index": 0,
+          "collateral": 10,
+          "collateralUsd": 25000,
+          "debtUsd": 12000,
+          "ltv": 0.48,
+          "hf": 1.7291666666666667,
+          "liq": 1445.7831325301206,
+          "distance": 0.4216867469879517
+        },
+        "totalCollateral": 13.028652630426905,
+        "totalCollateralUsd": 32571.631576067262,
+        "extraCollateral": 3.0286526304269046,
+        "band": {
+          "near": 1445.7831325301204,
+          "far": 867.4698795180723
+        },
+        "capped": false,
+        "overMax": false
+      }
+    },
+    {
+      "name": "close to max LTV (capped)",
+      "input": {
+        "collateral": {
+          "symbol": "WETH",
+          "ltv": 0.8,
+          "liqThreshold": 0.83,
+          "priceUsd": 2500
+        },
+        "collateralAmount": 10,
+        "debtUsd": 19500,
+        "loans": 4,
+        "band": 0.5,
+        "placement": "around",
+        "sizeJitter": 0.3,
+        "seed": 42
+      },
+      "output": {
+        "loans": [
+          {
+            "index": 1,
+            "collateral": 2.1421332907456048,
+            "collateralUsd": 5355.3332268640115,
+            "debtUsd": 4177.1599169539295,
+            "ltv": 0.7800000000000001,
+            "hf": 1.064102564102564,
+            "liq": 2349.397590361446,
+            "distance": 0.06024096385542166
+          },
+          {
+            "index": 2,
+            "collateral": 3.0405003557798733,
+            "collateralUsd": 7601.250889449683,
+            "debtUsd": 5138.445601267986,
+            "ltv": 0.6759999999999999,
+            "hf": 1.2278106508875741,
+            "liq": 2036.144578313253,
+            "distance": 0.18554216867469875
+          },
+          {
+            "index": 3,
+            "collateral": 3.8636625792823627,
+            "collateralUsd": 9659.156448205908,
+            "debtUsd": 5525.0374883737795,
+            "ltv": 0.5720000000000001,
+            "hf": 1.4510489510489508,
+            "liq": 1722.8915662650604,
+            "distance": 0.31084337349397584
+          },
+          {
+            "index": 4,
+            "collateral": 3.9823564046190643,
+            "collateralUsd": 9955.891011547661,
+            "debtUsd": 4659.356993404305,
+            "ltv": 0.46799999999999997,
+            "hf": 1.7735042735042732,
+            "liq": 1409.6385542168675,
+            "distance": 0.43614457831325304
+          }
+        ],
+        "single": {
+          "index": 0,
+          "collateral": 10,
+          "collateralUsd": 25000,
+          "debtUsd": 19500,
+          "ltv": 0.78,
+          "hf": 1.064102564102564,
+          "liq": 2349.397590361446,
+          "distance": 0.06024096385542166
+        },
+        "totalCollateral": 13.028652630426905,
+        "totalCollateralUsd": 32571.631576067262,
+        "extraCollateral": 3.0286526304269046,
+        "band": {
+          "near": 2349.397590361446,
+          "far": 1409.6385542168675
+        },
+        "capped": true,
+        "overMax": false
+      }
+    },
+    {
+      "name": "over max LTV",
+      "input": {
+        "collateral": {
+          "symbol": "WETH",
+          "ltv": 0.8,
+          "liqThreshold": 0.83,
+          "priceUsd": 2500
+        },
+        "collateralAmount": 10,
+        "debtUsd": 21000,
+        "loans": 4,
+        "band": 0.5,
+        "placement": "around",
+        "sizeJitter": 0.3,
+        "seed": 42
+      },
+      "output": {
+        "loans": [
+          {
+            "index": 1,
+            "collateral": 2.1421332907456048,
+            "collateralUsd": 5355.3332268640115,
+            "debtUsd": 4498.47991056577,
+            "ltv": 0.8400000000000001,
+            "hf": 0.988095238095238,
+            "liq": 2530.120481927711,
+            "distance": -0.012048192771084265
+          },
+          {
+            "index": 2,
+            "collateral": 3.040500355779873,
+            "collateralUsd": 7601.250889449682,
+            "debtUsd": 5533.710647519369,
+            "ltv": 0.728,
+            "hf": 1.14010989010989,
+            "liq": 2192.7710843373493,
+            "distance": 0.12289156626506026
+          },
+          {
+            "index": 3,
+            "collateral": 3.8636625792823627,
+            "collateralUsd": 9659.156448205908,
+            "debtUsd": 5950.040372094839,
+            "ltv": 0.616,
+            "hf": 1.3474025974025974,
+            "liq": 1855.421686746988,
+            "distance": 0.2578313253012048
+          },
+          {
+            "index": 4,
+            "collateral": 3.9823564046190647,
+            "collateralUsd": 9955.891011547661,
+            "debtUsd": 5017.769069820021,
+            "ltv": 0.504,
+            "hf": 1.6468253968253965,
+            "liq": 1518.0722891566265,
+            "distance": 0.3927710843373494
+          }
+        ],
+        "single": {
+          "index": 0,
+          "collateral": 10,
+          "collateralUsd": 25000,
+          "debtUsd": 21000,
+          "ltv": 0.84,
+          "hf": 0.9880952380952381,
+          "liq": 2530.1204819277114,
+          "distance": -0.012048192771084487
+        },
+        "totalCollateral": 13.028652630426905,
+        "totalCollateralUsd": 32571.631576067262,
+        "extraCollateral": 3.0286526304269046,
+        "band": {
+          "near": 2530.120481927711,
+          "far": 1518.0722891566265
+        },
+        "capped": true,
+        "overMax": true
+      }
+    },
+    {
+      "name": "one loan",
+      "input": {
+        "collateral": {
+          "symbol": "WETH",
+          "ltv": 0.8,
+          "liqThreshold": 0.83,
+          "priceUsd": 2500
+        },
+        "collateralAmount": 10,
+        "debtUsd": 12000,
+        "loans": 1,
+        "band": 0.5,
+        "placement": "around",
+        "sizeJitter": 0.3,
+        "seed": 42
+      },
+      "output": {
+        "loans": [
+          {
+            "index": 1,
+            "collateral": 10,
+            "collateralUsd": 25000,
+            "debtUsd": 12000,
+            "ltv": 0.48,
+            "hf": 1.7291666666666667,
+            "liq": 1445.7831325301206,
+            "distance": 0.4216867469879517
+          }
+        ],
+        "single": {
+          "index": 0,
+          "collateral": 10,
+          "collateralUsd": 25000,
+          "debtUsd": 12000,
+          "ltv": 0.48,
+          "hf": 1.7291666666666667,
+          "liq": 1445.7831325301206,
+          "distance": 0.4216867469879517
+        },
+        "totalCollateral": 10,
+        "totalCollateralUsd": 25000,
+        "extraCollateral": 0,
+        "band": {
+          "near": 1445.7831325301206,
+          "far": 1445.7831325301206
+        },
+        "capped": false,
+        "overMax": false
+      }
+    },
+    {
+      "name": "many loans, full variation",
+      "input": {
+        "collateral": {
+          "symbol": "WETH",
+          "ltv": 0.8,
+          "liqThreshold": 0.83,
+          "priceUsd": 2500
+        },
+        "collateralAmount": 10,
+        "debtUsd": 12000,
+        "loans": 9,
+        "band": 1,
+        "placement": "around",
+        "sizeJitter": 1,
+        "seed": 2026
+      },
+      "output": {
+        "loans": [
+          {
+            "index": 1,
+            "collateral": 0.5341309934167949,
+            "collateralUsd": 1335.3274835419872,
+            "debtUsd": 640.957192100154,
+            "ltv": 0.4800000000000001,
+            "hf": 1.7291666666666663,
+            "liq": 1445.7831325301208,
+            "distance": 0.4216867469879516
+          },
+          {
+            "index": 2,
+            "collateral": 1.40877627269434,
+            "collateralUsd": 3521.94068173585,
+            "debtUsd": 1521.4783745098873,
+            "ltv": 0.43200000000000005,
+            "hf": 1.921296296296296,
+            "liq": 1301.2048192771088,
+            "distance": 0.47951807228915655
+          },
+          {
+            "index": 3,
+            "collateral": 2.274782525226304,
+            "collateralUsd": 5686.95631306576,
+            "debtUsd": 2183.7912242172515,
+            "ltv": 0.38399999999999995,
+            "hf": 2.1614583333333335,
+            "liq": 1156.6265060240962,
+            "distance": 0.5373493975903615
+          },
+          {
+            "index": 4,
+            "collateral": 1.220427944835576,
+            "collateralUsd": 3051.0698620889398,
+            "debtUsd": 1025.1594736618836,
+            "ltv": 0.3359999999999999,
+            "hf": 2.470238095238096,
+            "liq": 1012.0481927710841,
+            "distance": 0.5951807228915664
+          },
+          {
+            "index": 5,
+            "collateral": 1.8349353789981964,
+            "collateralUsd": 4587.338447495491,
+            "debtUsd": 1321.1534728787015,
+            "ltv": 0.28800000000000003,
+            "hf": 2.881944444444444,
+            "liq": 867.4698795180724,
+            "distance": 0.653012048192771
+          },
+          {
+            "index": 6,
+            "collateral": 2.889915078300601,
+            "collateralUsd": 7224.787695751502,
+            "debtUsd": 1733.9490469803604,
+            "ltv": 0.24,
+            "hf": 3.458333333333333,
+            "liq": 722.8915662650602,
+            "distance": 0.7108433734939759
+          },
+          {
+            "index": 7,
+            "collateral": 2.469304615920135,
+            "collateralUsd": 6173.261539800337,
+            "debtUsd": 1185.2662156416645,
+            "ltv": 0.19199999999999998,
+            "hf": 4.322916666666667,
+            "liq": 578.313253012048,
+            "distance": 0.7686746987951808
+          },
+          {
+            "index": 8,
+            "collateral": 3.6366950008433463,
+            "collateralUsd": 9091.737502108366,
+            "debtUsd": 1309.2102003036043,
+            "ltv": 0.14399999999999996,
+            "hf": 5.76388888888889,
+            "liq": 433.7349397590361,
+            "distance": 0.8265060240963855
+          },
+          {
+            "index": 9,
+            "collateral": 4.4959783321103926,
+            "collateralUsd": 11239.945830275981,
+            "debtUsd": 1079.034799706494,
+            "ltv": 0.09599999999999997,
+            "hf": 8.645833333333336,
+            "liq": 289.156626506024,
+            "distance": 0.8843373493975903
+          }
+        ],
+        "single": {
+          "index": 0,
+          "collateral": 10,
+          "collateralUsd": 25000,
+          "debtUsd": 12000,
+          "ltv": 0.48,
+          "hf": 1.7291666666666667,
+          "liq": 1445.7831325301206,
+          "distance": 0.4216867469879517
+        },
+        "totalCollateral": 20.76494614234569,
+        "totalCollateralUsd": 51912.365355864225,
+        "extraCollateral": 10.76494614234569,
+        "band": {
+          "near": 1445.7831325301208,
+          "far": 289.156626506024
+        },
+        "capped": true,
+        "overMax": false
+      }
+    }
+  ],
+  "schedules": [
+    {
+      "name": "off",
+      "input": {
+        "slices": [
+          {
+            "index": 1,
+            "size": 2.8571
+          },
+          {
+            "index": 2,
+            "size": 3.5147
+          },
+          {
+            "index": 3,
+            "size": 3.7791
+          },
+          {
+            "index": 4,
+            "size": 3.187
+          },
+          {
+            "index": 5,
+            "size": 3.3286
+          }
+        ],
+        "windowMs": 3600000,
+        "children": 3,
+        "seed": 42,
+        "szDecimals": 4,
+        "jitter": "off"
+      },
+      "output": [
+        {
+          "id": 1,
+          "slice": 1,
+          "at": 0,
+          "size": 0.9523
+        },
+        {
+          "id": 2,
+          "slice": 2,
+          "at": 257143,
+          "size": 1.1715
+        },
+        {
+          "id": 3,
+          "slice": 3,
+          "at": 514286,
+          "size": 1.2597
+        },
+        {
+          "id": 4,
+          "slice": 4,
+          "at": 771429,
+          "size": 1.0623
+        },
+        {
+          "id": 5,
+          "slice": 5,
+          "at": 1028571,
+          "size": 1.1095
+        },
+        {
+          "id": 6,
+          "slice": 1,
+          "at": 1285714,
+          "size": 0.9523
+        },
+        {
+          "id": 7,
+          "slice": 2,
+          "at": 1542857,
+          "size": 1.1715
+        },
+        {
+          "id": 8,
+          "slice": 3,
+          "at": 1800000,
+          "size": 1.2597
+        },
+        {
+          "id": 9,
+          "slice": 4,
+          "at": 2057143,
+          "size": 1.0623
+        },
+        {
+          "id": 10,
+          "slice": 5,
+          "at": 2314286,
+          "size": 1.1095
+        },
+        {
+          "id": 11,
+          "slice": 1,
+          "at": 2571429,
+          "size": 0.9525
+        },
+        {
+          "id": 12,
+          "slice": 2,
+          "at": 2828571,
+          "size": 1.1717
+        },
+        {
+          "id": 13,
+          "slice": 3,
+          "at": 3085714,
+          "size": 1.2597
+        },
+        {
+          "id": 14,
+          "slice": 4,
+          "at": 3342857,
+          "size": 1.0624
+        },
+        {
+          "id": 15,
+          "slice": 5,
+          "at": 3600000,
+          "size": 1.1096
+        }
+      ]
+    },
+    {
+      "name": "light",
+      "input": {
+        "slices": [
+          {
+            "index": 1,
+            "size": 2.8571
+          },
+          {
+            "index": 2,
+            "size": 3.5147
+          },
+          {
+            "index": 3,
+            "size": 3.7791
+          },
+          {
+            "index": 4,
+            "size": 3.187
+          },
+          {
+            "index": 5,
+            "size": 3.3286
+          }
+        ],
+        "windowMs": 3600000,
+        "children": 3,
+        "seed": 42,
+        "szDecimals": 4,
+        "jitter": "light"
+      },
+      "output": [
+        {
+          "id": 1,
+          "slice": 3,
+          "at": 42132,
+          "size": 1.3764
+        },
+        {
+          "id": 2,
+          "slice": 4,
+          "at": 302760,
+          "size": 1.2277
+        },
+        {
+          "id": 3,
+          "slice": 5,
+          "at": 504448,
+          "size": 0.9534
+        },
+        {
+          "id": 4,
+          "slice": 4,
+          "at": 823408,
+          "size": 0.9491
+        },
+        {
+          "id": 5,
+          "slice": 3,
+          "at": 970842,
+          "size": 1.1775
+        },
+        {
+          "id": 6,
+          "slice": 5,
+          "at": 1374524,
+          "size": 1.0229
+        },
+        {
+          "id": 7,
+          "slice": 1,
+          "at": 1504633,
+          "size": 0.925
+        },
+        {
+          "id": 8,
+          "slice": 1,
+          "at": 1809608,
+          "size": 0.9114
+        },
+        {
+          "id": 9,
+          "slice": 5,
+          "at": 2046475,
+          "size": 1.3523
+        },
+        {
+          "id": 10,
+          "slice": 2,
+          "at": 2403944,
+          "size": 1.2027
+        },
+        {
+          "id": 11,
+          "slice": 2,
+          "at": 2604468,
+          "size": 1.1976
+        },
+        {
+          "id": 12,
+          "slice": 2,
+          "at": 2900732,
+          "size": 1.1144
+        },
+        {
+          "id": 13,
+          "slice": 3,
+          "at": 2989697,
+          "size": 1.2252
+        },
+        {
+          "id": 14,
+          "slice": 4,
+          "at": 3404276,
+          "size": 1.0102
+        },
+        {
+          "id": 15,
+          "slice": 1,
+          "at": 3587170,
+          "size": 1.0207
+        }
+      ]
+    },
+    {
+      "name": "heavy",
+      "input": {
+        "slices": [
+          {
+            "index": 1,
+            "size": 2.8571
+          },
+          {
+            "index": 2,
+            "size": 3.5147
+          },
+          {
+            "index": 3,
+            "size": 3.7791
+          },
+          {
+            "index": 4,
+            "size": 3.187
+          },
+          {
+            "index": 5,
+            "size": 3.3286
+          }
+        ],
+        "windowMs": 3600000,
+        "children": 3,
+        "seed": 42,
+        "szDecimals": 4,
+        "jitter": "heavy"
+      },
+      "output": [
+        {
+          "id": 1,
+          "slice": 3,
+          "at": 72000,
+          "size": 1.5316
+        },
+        {
+          "id": 2,
+          "slice": 4,
+          "at": 789728,
+          "size": 1.5586
+        },
+        {
+          "id": 3,
+          "slice": 5,
+          "at": 1131074,
+          "size": 0.6938
+        },
+        {
+          "id": 4,
+          "slice": 4,
+          "at": 1575467,
+          "size": 0.7225
+        },
+        {
+          "id": 5,
+          "slice": 3,
+          "at": 1613314,
+          "size": 1.068
+        },
+        {
+          "id": 6,
+          "slice": 5,
+          "at": 1627840,
+          "size": 0.8788
+        },
+        {
+          "id": 7,
+          "slice": 1,
+          "at": 1968133,
+          "size": 0.8914
+        },
+        {
+          "id": 8,
+          "slice": 1,
+          "at": 2378191,
+          "size": 0.861
+        },
+        {
+          "id": 9,
+          "slice": 5,
+          "at": 2537312,
+          "size": 1.756
+        },
+        {
+          "id": 10,
+          "slice": 2,
+          "at": 2598300,
+          "size": 1.2708
+        },
+        {
+          "id": 11,
+          "slice": 2,
+          "at": 2709632,
+          "size": 1.2544
+        },
+        {
+          "id": 12,
+          "slice": 2,
+          "at": 2874825,
+          "size": 0.9895
+        },
+        {
+          "id": 13,
+          "slice": 3,
+          "at": 3062802,
+          "size": 1.1795
+        },
+        {
+          "id": 14,
+          "slice": 4,
+          "at": 3354170,
+          "size": 0.9059
+        },
+        {
+          "id": 15,
+          "slice": 1,
+          "at": 3369024,
+          "size": 1.1047
+        }
+      ]
+    },
+    {
+      "name": "heavy, other seed, one child",
+      "input": {
+        "slices": [
+          {
+            "index": 1,
+            "size": 2.8571
+          },
+          {
+            "index": 2,
+            "size": 3.5147
+          },
+          {
+            "index": 3,
+            "size": 3.7791
+          },
+          {
+            "index": 4,
+            "size": 3.187
+          },
+          {
+            "index": 5,
+            "size": 3.3286
+          }
+        ],
+        "windowMs": 3600000,
+        "children": 1,
+        "seed": 7,
+        "szDecimals": 4,
+        "jitter": "heavy"
+      },
+      "output": [
+        {
+          "id": 1,
+          "slice": 4,
+          "at": 72000,
+          "size": 3.187
+        },
+        {
+          "id": 2,
+          "slice": 5,
+          "at": 2362279,
+          "size": 3.3286
+        },
+        {
+          "id": 3,
+          "slice": 1,
+          "at": 2536490,
+          "size": 2.8571
+        },
+        {
+          "id": 4,
+          "slice": 2,
+          "at": 3186865,
+          "size": 3.5147
+        },
+        {
+          "id": 5,
+          "slice": 3,
+          "at": 3536310,
+          "size": 3.7791
+        }
+      ]
+    },
+    {
+      "name": "light, zero window",
+      "input": {
+        "slices": [
+          {
+            "index": 1,
+            "size": 2.8571
+          },
+          {
+            "index": 2,
+            "size": 3.5147
+          },
+          {
+            "index": 3,
+            "size": 3.7791
+          },
+          {
+            "index": 4,
+            "size": 3.187
+          },
+          {
+            "index": 5,
+            "size": 3.3286
+          }
+        ],
+        "windowMs": 0,
+        "children": 3,
+        "seed": 3,
+        "szDecimals": 4,
+        "jitter": "light"
+      },
+      "output": [
+        {
+          "id": 1,
+          "slice": 3,
+          "at": 0,
+          "size": 1.4041
+        },
+        {
+          "id": 2,
+          "slice": 4,
+          "at": 0,
+          "size": 1.13
+        },
+        {
+          "id": 3,
+          "slice": 1,
+          "at": 0,
+          "size": 1.0003
+        },
+        {
+          "id": 4,
+          "slice": 2,
+          "at": 0,
+          "size": 1.3217
+        },
+        {
+          "id": 5,
+          "slice": 1,
+          "at": 0,
+          "size": 0.8242
+        },
+        {
+          "id": 6,
+          "slice": 1,
+          "at": 0,
+          "size": 1.0326
+        },
+        {
+          "id": 7,
+          "slice": 5,
+          "at": 0,
+          "size": 1.2158
+        },
+        {
+          "id": 8,
+          "slice": 3,
+          "at": 0,
+          "size": 1.2763
+        },
+        {
+          "id": 9,
+          "slice": 2,
+          "at": 0,
+          "size": 1.2221
+        },
+        {
+          "id": 10,
+          "slice": 3,
+          "at": 0,
+          "size": 1.0987
+        },
+        {
+          "id": 11,
+          "slice": 4,
+          "at": 0,
+          "size": 1.0042
+        },
+        {
+          "id": 12,
+          "slice": 4,
+          "at": 0,
+          "size": 1.0528
+        },
+        {
+          "id": 13,
+          "slice": 5,
+          "at": 0,
+          "size": 0.8952
+        },
+        {
+          "id": 14,
+          "slice": 2,
+          "at": 0,
+          "size": 0.9709
+        },
+        {
+          "id": 15,
+          "slice": 5,
+          "at": 0,
+          "size": 1.2176
+        }
+      ]
+    }
+  ]
+}
