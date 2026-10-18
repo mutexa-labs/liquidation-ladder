@@ -1,0 +1,61 @@
+{
+  "name": "@mutexa/ladder",
+  "version": "0.1.0",
+  "description": "Split one perp position or loan into slices with staggered margin or LTV, alert-safe sizing, a cost preview and a jittered execution schedule.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mutexa-labs/liquidation-ladder.git"
+  },
+  "homepage": "https://github.com/mutexa-labs/liquidation-ladder#readme",
+  "bugs": {
+    "url": "https://github.com/mutexa-labs/liquidation-ladder/issues"
+  },
+  "keywords": [
+    "liquidation",
+    "ladder",
+    "position-sizing",
+    "twap",
+    "hyperliquid",
+    "aave",
+    "perps",
+    "privacy",
+    "mutexa"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepare": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "prettier --check \"{src,test}/**/*.ts\"",
+    "format": "prettier --write \"{src,test}/**/*.ts\"",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mutexa/liq-math": "github:mutexa-labs/liq-math#v0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "prettier": "^3.9.8",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
